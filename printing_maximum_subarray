@@ -1,0 +1,20 @@
+// so we are solving the problem of printing an subarray we want the result like 1,12,123,1234,12345 so firstely we will print the 1,2,3,4,5
+#include <iostream>
+using namespace std; 
+
+void prsub(int array[],int n){
+for(int i=0; i<n; i++){
+    // cout<<array[i]; this will give 1,2,3,4,5
+    for(int j=i; j<n;j++){
+        //  cout<<i<<","<<j<<endl;
+        for(int k=i; k<=j;k++){
+            cout<<array[k]<<",";
+        }
+    }
+}
+}
+int main(){
+int array[]={1, 2, 3, 4, 5};
+int arr_size = sizeof(array)/sizeof(int);
+prsub(array, arr_size);
+}
