@@ -1,0 +1,19 @@
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& numbers, int target) {
+        int start = 0, end = numbers.size()-1 ;
+        while(start<end){
+            if(numbers[start]+numbers[end]== target){
+                return {start+1,end+1};
+            }
+            else if(numbers[start]+numbers[end]<target){
+                start++;
+            }
+            else{
+                end--;
+            }
+        }
+    return {};}
+};
+
+# i had faced the problem so in the starting and the ending part so in the question taht in question they said that the output that you have to provide us is [1,2] as i is starting from 1 and i did int start = 1 which was a wrong step so i have to return start+1 and end+1

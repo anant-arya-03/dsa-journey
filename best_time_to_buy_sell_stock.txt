@@ -1,0 +1,16 @@
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+        int minim =INT_MAX; int max_profit = 0; int best_buy[100000];best_buy[0]= INT_MAX;
+        for(int i =1; i<prices.size(); i++){
+             best_buy[i]=min(best_buy[i-1], prices[i-1]);
+        }
+        for(int j =0; j<prices.size(); j++){
+            int proft = prices[j]-best_buy[j];
+            max_profit= max(max_profit, proft);
+        }
+        return max_profit;
+        
+    }
+};
+# so i had faced the error in this is i am comparing the min min(best_buy[i], prices[i]) as i forgot that i had inilised the best_buy to int max 
