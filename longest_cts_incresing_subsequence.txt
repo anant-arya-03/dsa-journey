@@ -1,0 +1,23 @@
+class Solution {
+public:
+    int findLengthOfLCIS(vector<int>& nums) {
+       int start = 0, end=0, n = nums.size(), longest_substring = 1;
+       for(int i =0; i<n-1; i++){
+        if(nums[i]< nums[i+1]){
+            end++;
+        }
+        else{
+            start++;
+            end=start;     
+        }
+
+
+          longest_substring = max(longest_substring, end-start+1);
+       } return longest_substring;
+    }
+}; 
+
+
+
+// so we have to update the subsequence as if we will not met this condiction nums[i]< nums[i+1]) start++;
+            // end=start;  thiis is little bit confusing
