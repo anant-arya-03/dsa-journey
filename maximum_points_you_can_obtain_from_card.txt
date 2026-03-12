@@ -1,0 +1,20 @@
+class Solution {
+public:
+    int maxScore(vector<int>& cardPoints, int k) {
+        int n = cardPoints.size();
+        int left_sum=0, right_sum=0, end = n-1, max_sum=0;
+        for(int i=0 ;i<k; i++){
+            left_sum = left_sum+ cardPoints[i];
+            max_sum = left_sum;
+        }
+        for(int i = k-1; i>=0; i--){
+            left_sum= left_sum- cardPoints[i];
+            right_sum = right_sum + cardPoints[end];
+            end--;
+            max_sum = max(max_sum, left_sum + right_sum);
+        }
+        return max_sum;
+    }
+};
+as i faced many issue it is a little bit confusing 
+as firstly i thought that we will take four window from starting and four from end but i understand the question wrong so take left sum at the constant k and sub k-1 elemen t from back and then add the last element step by step
