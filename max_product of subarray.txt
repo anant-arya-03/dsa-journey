@@ -1,0 +1,16 @@
+class Solution {
+public:
+    int maxProduct(vector<int>& nums) {
+        int max_product= INT_MIN;
+        for(int i=0;i<nums.size();i++){
+        int product =1;
+            for(int j=i;j<nums.size();j++){
+                product *= nums[j];
+                max_product = max(product, max_product);
+            }
+        }
+        return max_product; 
+    }
+};
+
+this approach i had thought through kadanns algo the time complexity is 0(n^2) but i am able to understand so for every subarray part it calculated the max as from 0 to n , from 1 to n , 2 to n and at every point or changing the no if we are going from 1 to n we are refressing the product to 1 .
