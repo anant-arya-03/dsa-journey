@@ -1,0 +1,95 @@
+class Solution {
+public:
+
+    string add(string num1, string num2)
+    {
+        string ans;
+
+        int index1 = num1.size() - 1;
+        int index2 = num2.size() - 1;
+
+        int sum, carry = 0;
+
+        // Both numbers still have digits
+        while(index2 >= 0)
+        {
+            sum = (num1[index1] - '0') +
+                  (num2[index2] - '0') +
+                  carry;
+
+            carry = sum / 10;
+
+            char c = '0' + sum % 10;
+
+            ans += c;
+
+            index2--;
+            index1--;
+        }
+
+        // num1 still has digits
+        while(index1 >= 0)
+        {
+            sum = (num1[index1] - '0') + carry;
+
+            carry = sum / 10;
+
+            char c = '0' + sum % 10;
+
+            ans += c;
+
+            index1--;
+        }
+
+        // If carry is still left
+        if(carry)
+        {
+            ans += '1';
+        }
+
+        // We built the answer from right to left
+        reverse(ans.begin(), ans.end());
+
+        return ans;
+    }
+
+
+    string addStrings(string num1, string num2)
+    {
+        // Make num1 the longer string
+        if(num1.size() < num2.size())
+            return add(num2, num1);
+
+        return add(num1, num2);
+    }
+};
+
+
+we add the function i understand 1. Don't convert the strings to integers.
+
+2. Start from the last character of both strings.
+
+3. Convert each character into a number.
+
+4. Add:
+      digit1 + digit2 + carry
+
+5. The last digit of the sum goes into the answer.
+
+6. The remaining part becomes carry.
+
+7. Move both pointers one step left.
+
+8. If one string finishes, continue using the
+   remaining string.
+
+9. If carry is still left, add it.
+
+10. Because we built the answer from right to left,
+    reverse the answer.
+
+sum = digit1 + digit2 + carry
+
+new digit = sum % 10
+
+new carry = sum / 10
