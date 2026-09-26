@@ -1,0 +1,72 @@
+ROMAN TO INTEGER — SUMMARY
+
+1. Create a helper function value(char ch) that converts each Roman symbol into its integer value:
+   I=1, V=5, X=10, L=50, C=100, D=500, M=1000.
+
+2. Traverse the string from left to right and compare the current character with the next character.
+
+3. If value(s[i]) < value(s[i+1]), subtract the current value because Roman numerals use subtraction in cases like:
+   IV = 4, IX = 9, XL = 40, etc.
+
+4. Otherwise, add the current value.
+
+5. We use:
+   for(int i = 0; i < s.length()-1; i++)
+   because we compare s[i] with s[i+1]. If i reached the last index, s[i+1] would be outside the string.
+
+6. Because the loop stops at the second-last character, the last character is not processed inside the loop. Therefore, add it separately:
+   ans += value(s[s.length()-1]);
+
+7. Final logic:
+   current < next → subtract current
+   current >= next → add current
+   then add the last character separately.
+
+Example: IV
+   I < V → -1
+   Last V → +5
+   Answer = 4
+
+//solution
+class Solution {
+public:
+
+    int value(char ch)
+    {
+        if(ch == 'I')
+            return 1;
+        else if(ch == 'V')
+            return 5;
+        else if(ch == 'X')
+            return 10;
+        else if(ch == 'L')
+            return 50;
+        else if(ch == 'C')
+            return 100;
+        else if(ch == 'D')
+            return 500;
+        else
+            return 1000;
+    }
+
+    int romanToInt(string s)
+    {
+        int ans = 0;
+
+        for(int i = 0; i < s.length() - 1; i++)
+        {
+            if(value(s[i]) < value(s[i+1]))
+            {
+                ans -=value(s[i]);
+            }
+            else
+            {
+                ans += value(s[i]);
+            }
+        }
+
+        ans += value(s[s.length() - 1]);
+
+        return ans;
+    }
+};
