@@ -1,0 +1,29 @@
+koko_eating_banana_overflow
+
+class Solution {
+public:
+    int minEatingSpeed(vector<int>& piles, int h) {
+
+        int max_pin = INT_MIN;
+
+        for(int i = 0; i < piles.size(); i++) {
+            max_pin = max(max_pin, piles[i]);
+        }
+
+        for(int j = 1; j <= max_pin; j++) {
+
+            long long hour = 0;
+
+            for(int z = 0; z < piles.size(); z++) {
+                hour += ceil((double)piles[z] / j);
+            }
+
+            if(hour <= h) {
+                return j;
+            }
+        }
+
+        return -1;
+    }
+};
+in thius problem we simpoly find per hour and used ceil for round off and double for type comversion
