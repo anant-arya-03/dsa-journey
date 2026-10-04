@@ -1,0 +1,29 @@
+optimised technique 3 sum
+
+THREE_SUM(A, n, target)
+
+    SORT(A)
+
+    FOR i = 0 TO n - 3
+
+        start = i + 1
+        end = n - 1
+
+        WHILE start < end
+
+            sum = A[i] + A[start] + A[end]
+
+            IF sum == target
+                RETURN (i, start, end)
+
+            ELSE IF sum < target
+                start++
+
+            ELSE
+                end--
+
+        END WHILE
+
+    END FOR
+
+    RETURN "Not Found"
