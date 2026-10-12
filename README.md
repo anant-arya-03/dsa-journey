@@ -12,8 +12,6 @@ My goal is to understand:
 
 ---
 
-## October 3
-
 ### Concepts Learned
 
 On October 3, I did not commit a specific problem, but I worked on understanding
@@ -65,8 +63,6 @@ This helped me understand that **4 Sum is not a completely new problem**.
 It is an extension of the same thinking used in 3 Sum.
 
 ---
-
-## October 8
 
 ### Pointers - In Depth
 
