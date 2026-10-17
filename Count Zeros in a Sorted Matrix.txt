@@ -1,0 +1,24 @@
+Count Zeros in a Sorted Matrix
+class Solution {
+  public:
+    int countZeros(vector<vector<int>>& mat) {
+        int n = mat.size();
+        int start = 0;
+        int end = n - 1;
+        int count = 0;
+
+        while (start < n && end >= 0) {
+            if (mat[start][end] == 1) {
+                end--;
+            }
+            else {
+                count += (end + 1);
+                start++;
+            }
+        }
+
+        return count;
+    }
+};
+
+SOLVED BY STARE CASE METHOD
