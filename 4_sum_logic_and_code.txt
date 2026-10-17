@@ -105,3 +105,6 @@ public:
         return ans;
     }
 };
+
+
+it can solve using other method also
