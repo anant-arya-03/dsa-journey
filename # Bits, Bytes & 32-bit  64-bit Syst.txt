@@ -1,0 +1,29 @@
+# Bits, Bytes & 32-bit / 64-bit Systems
+
+1 byte = 8 bits = 2^3 bits
+
+## Memory Conversion
+1 GB  = 2^30 bytes
+2 GB  = 2^31 bytes
+4 GB  = 2^32 bytes
+8 GB  = 2^33 bytes
+16 GB = 2^34 bytes
+
+Bits = Bytes x 8
+
+Example:
+4 GB = 2^32 bytes = 2^35 bits
+16 GB = 2^34 bytes = 2^37 bits
+
+## 32-bit vs 64-bit
+- 32-bit byte addressing -> 2^32 bytes = 4 GiB address space.
+- 64-bit systems can support more than 4 GiB RAM.
+- RAM size alone does NOT determine whether a system is 32-bit or 64-bit.
+
+## C/C++ Pointer Size (Typical)
+int = 4 bytes
+int* = 8 bytes on a typical 64-bit system
+int* = usually 4 bytes in a 32-bit program
+
+Remember:
+Memory capacity in powers of 2 does NOT determine CPU bitness.
