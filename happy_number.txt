@@ -1,0 +1,36 @@
+happy_number 
+
+class Solution {
+public:
+    int splitNumber(int num) {
+        int sum = 0;
+
+        while (num > 0) {
+            int remainder = num % 10;
+            sum = sum + remainder * remainder;
+            num = num / 10;
+        }
+
+        return sum;
+    }
+
+    bool isHappy(int n) {
+        int ans = splitNumber(n);
+        int ans2 = splitNumber(ans);
+
+        while (ans != ans2) {
+            ans = splitNumber(ans);
+            ans2 = splitNumber(splitNumber(ans2));
+        }
+
+        if (ans2 == 1) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+};
+
+
+
+ //ans2 = splitNumber(splitNumber(ans2));  this line was very confusing for me as I was dowing ans 2 instead of calling it double time it overflows so to make it faster we called it twice
