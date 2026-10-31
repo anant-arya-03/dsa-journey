@@ -1,35 +1,38 @@
-# DSA Learning Journey
+# My DSA Journey
 
-This repository contains my DSA practice, focused on understanding patterns, choosing an approach, explaining why it works, and learning from mistakes.
+This is where I keep the problems I solve and the things I learn along the way. I’m trying to understand why a solution works, how to improve it, and what I missed the first time.
 
-## Topic index
+Some files have working solutions. Others have rough ideas or mistakes I want to remember. They’re all part of the journey.
 
-| Topic | Practice and notes |
+## Where do I upload a new file?
+
+**Not sure? Put it in [inbox](inbox/).** I can sort it out later—no need to stop practicing just to pick a folder.
+
+If I know the main technique, I use that folder first. Otherwise, I choose the kind of problem. I keep each file in just one place.
+
+| What I’m practicing | Folder |
 |---|---|
-| Fundamentals | [Bits, bytes and integer sizes](fundamentals/bits-bytes-integer-sizes.txt) |
-| Arrays | [Buy and sell stock](arrays/best-time-to-buy-sell-stock.txt), [Maximum subarray: brute force](arrays/maximum-subarray-brute-force.txt), [Print maximum subarray](arrays/print-maximum-subarray.txt), [Maximum product subarray](arrays/maximum-product-subarray.txt), [Continuous increasing subsequence](arrays/longest-continuous-increasing-subsequence.txt) |
-| Two pointers | [Two Sum II](two-pointers/two-sum-sorted-array.txt), [3Sum: brute force](two-pointers/three-sum-brute-force.txt), [3Sum: optimized](two-pointers/three-sum-optimized.txt), [3Sum Closest: first approach](two-pointers/three-sum-closest-first-approach.txt), [3Sum Closest: alternative](two-pointers/three-sum-closest-alternative.txt), [4Sum](two-pointers/four-sum.txt) |
-| Sliding window | [Longest substring without repeating characters](sliding-window/longest-substring-without-repeating.txt), [Maximum points from cards](sliding-window/maximum-points-from-cards.txt) |
-| Binary search | [Search insert position](binary-search/search-insert-position.txt), [Koko: optimized approach](binary-search/koko-eating-bananas-optimized.txt), [Koko: overflow attempt](binary-search/koko-eating-bananas-overflow-attempt.txt) |
-| Strings | [Valid palindrome](strings/valid-palindrome.txt), [Valid anagram](strings/valid-anagram.txt), [Add strings](strings/add-strings.txt), [Sort vowels](strings/sort-vowels.txt), [First occurrence](strings/first-occurrence.txt), [Repeated string match](strings/repeated-string-match.txt), [Minimum front insertions for palindrome](strings/minimum-front-insertions-palindrome.txt) |
-| Number problems | [Happy number](math/happy-number.txt), [Integer to Roman](math/integer-to-roman.txt), [Roman to integer](math/roman-to-integer.txt) |
-| Dynamic programming | [Climbing stairs: notes](dynamic-programming/climbing-stairs-notes.txt), [Iterative approach](dynamic-programming/climbing-stairs-iterative.txt), [Error attempt](dynamic-programming/climbing-stairs-error-attempt.txt) |
-| Matrices | [Count zeros in a sorted matrix](matrices/count-zeros-sorted-matrix.txt) |
-| Sorting | [Merge sort](sorting/merge-sort.txt) |
+| Moving two pointers through an array or string | [two-pointers](two-pointers/) |
+| Growing or shrinking a window | [sliding-window](sliding-window/) |
+| Binary search, including searching for an answer | [binary-search](binary-search/) |
+| Reusing smaller answers with DP or memoization | [dynamic-programming](dynamic-programming/) |
+| Implementing a sorting algorithm | [sorting](sorting/) |
+| Other array problems | [arrays](arrays/) |
+| Other string problems | [strings](strings/) |
+| Grids and 2D arrays | [matrices](matrices/) |
+| Number problems and conversions | [math](math/) |
+| Basic concepts, bits, bytes, and general notes | [fundamentals](fundamentals/) |
 
-## How I record a problem
+For example, **3Sum goes in `two-pointers`**, even though it uses an array. A string problem solved with a sliding window goes in `sliding-window`. If the technique still isn’t clear, `inbox` is fine.
 
-1. Problem statement and source link.
-2. Pattern and why it applies.
-3. Brute-force approach, then improvements.
-4. Time and space complexity.
-5. Edge cases and a small dry run.
-6. Mistakes, corrections, and revision notes.
+## My upload routine
 
-## Learning status
+1. Open the folder here on GitHub.
+2. Choose **Add file → Upload files**.
+3. Upload the file and commit with a short message, like `Add two sum practice`.
 
-These are learning notes and solution attempts, not a verified solution library. Files marked as error or overflow attempts are preserved for revision. Alternative approaches are kept separately.
+Use a simple name like `two-sum.cpp` for C++ code, or `two-sum-notes.md` for an explanation. Existing `.txt` notes are fine too.
 
-## Adding new work
+Keep different attempts together in the same topic folder: `three-sum-brute-force.txt`, `three-sum-optimized.txt`, or `three-sum-mistakes.md`. No need to upload the same file to multiple folders or edit this README every time.
 
-The existing learning files are grouped into topic folders. Continue using `arrays/`, `strings/`, `two-pointers/`, `sliding-window/`, `binary-search/`, `dynamic-programming/`, `matrices/`, `sorting/`, `math/`, and `fundamentals/`. Use lowercase hyphenated filenames and descriptive approach suffixes. Add each new problem to the topic index.
+A few lines about the approach, time and space complexity, and what I learned are enough. The goal is to keep learning and make revision easier.
