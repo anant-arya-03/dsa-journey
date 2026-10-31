@@ -6,16 +6,16 @@ This repository contains my DSA practice, focused on understanding patterns, cho
 
 | Topic | Practice and notes |
 |---|---|
-| Fundamentals | [Bits, bytes and integer sizes](%23%20Bits%2C%20Bytes%20%26%2032-bit%20%2064-bit%20Syst.txt) |
-| Arrays | [Buy and sell stock](best_time_to_buy_sell_stock.txt), [Maximum subarray: brute force](brute_force%20of_finding_max_subarray), [Print maximum subarray](printing_maximum_subarray), [Maximum product subarray](max_product%20of%20subarray.txt), [Continuous increasing subsequence](longest_cts_incresing_subsequence.txt) |
-| Two pointers | [Two Sum II](two_sum_2_in%20_sorted_array.txt), [3Sum: brute force](brute%20force%20for%203%20sum%20with%20time%20com.txt), [3Sum: optimized](optimised%20technique%203%20sum.txt), [3Sum Closest: first approach](3_closest%20sun.txt), [3Sum Closest: alternative](3_closest_sum.txt), [4Sum](4_sum_logic_and_code.txt) |
-| Sliding window | [Longest substring without repeating characters](longest_substring_without_repeating.txt), [Maximum points from cards](maximum_points_you_can_obtain_from_card.txt) |
-| Binary search | [Search insert position](search%20insert%20position.txt), [Koko: optimized approach](koko%20eating%20banana%20optimise%20solutio.txt), [Koko: overflow attempt](koko_eating_banana_overflow.txt) |
-| Strings | [Valid palindrome](valid_palandrome.txt), [Valid anagram](valid_anagram.txt), [Add strings](add_string.txt), [Sort vowels](sort_vowel_in_a_string.txt), [First occurrence](find-the-index-of-the-first-occurre.txt), [Repeated string match](REPEATED%20STRING%20MATCH.txt), [Minimum front insertions for palindrome](Minimum%20Front%20Insertion%20for%20Palindr.txt) |
-| Number problems | [Happy number](happy_number.txt), [Integer to Roman](int_to_roman.txt), [Roman to integer](ROMAN%20TO%20INTEGER.txt) |
-| Dynamic programming | [Climbing stairs: notes](Climbing%20Stairs.txt), [Iterative approach](optimise_method_of%20_climbing_stairs.txt), [Error attempt](climbing_stares_error_code.txt) |
-| Matrices | [Count zeros in a sorted matrix](Count%20Zeros%20in%20a%20Sorted%20Matrix.txt) |
-| Sorting | [Merge sort](merge_sort.txt) |
+| Fundamentals | [Bits, bytes and integer sizes](fundamentals/bits-bytes-integer-sizes.txt) |
+| Arrays | [Buy and sell stock](arrays/best-time-to-buy-sell-stock.txt), [Maximum subarray: brute force](arrays/maximum-subarray-brute-force.txt), [Print maximum subarray](arrays/print-maximum-subarray.txt), [Maximum product subarray](arrays/maximum-product-subarray.txt), [Continuous increasing subsequence](arrays/longest-continuous-increasing-subsequence.txt) |
+| Two pointers | [Two Sum II](two-pointers/two-sum-sorted-array.txt), [3Sum: brute force](two-pointers/three-sum-brute-force.txt), [3Sum: optimized](two-pointers/three-sum-optimized.txt), [3Sum Closest: first approach](two-pointers/three-sum-closest-first-approach.txt), [3Sum Closest: alternative](two-pointers/three-sum-closest-alternative.txt), [4Sum](two-pointers/four-sum.txt) |
+| Sliding window | [Longest substring without repeating characters](sliding-window/longest-substring-without-repeating.txt), [Maximum points from cards](sliding-window/maximum-points-from-cards.txt) |
+| Binary search | [Search insert position](binary-search/search-insert-position.txt), [Koko: optimized approach](binary-search/koko-eating-bananas-optimized.txt), [Koko: overflow attempt](binary-search/koko-eating-bananas-overflow-attempt.txt) |
+| Strings | [Valid palindrome](strings/valid-palindrome.txt), [Valid anagram](strings/valid-anagram.txt), [Add strings](strings/add-strings.txt), [Sort vowels](strings/sort-vowels.txt), [First occurrence](strings/first-occurrence.txt), [Repeated string match](strings/repeated-string-match.txt), [Minimum front insertions for palindrome](strings/minimum-front-insertions-palindrome.txt) |
+| Number problems | [Happy number](math/happy-number.txt), [Integer to Roman](math/integer-to-roman.txt), [Roman to integer](math/roman-to-integer.txt) |
+| Dynamic programming | [Climbing stairs: notes](dynamic-programming/climbing-stairs-notes.txt), [Iterative approach](dynamic-programming/climbing-stairs-iterative.txt), [Error attempt](dynamic-programming/climbing-stairs-error-attempt.txt) |
+| Matrices | [Count zeros in a sorted matrix](matrices/count-zeros-sorted-matrix.txt) |
+| Sorting | [Merge sort](sorting/merge-sort.txt) |
 
 ## How I record a problem
 
@@ -32,4 +32,4 @@ These are learning notes and solution attempts, not a verified solution library.
 
 ## Adding new work
 
-Use topic folders such as `arrays/`, `strings/`, `two-pointers/`, `sliding-window/`, `binary-search/`, `dynamic-programming/`, `matrices/`, `sorting/`, and `fundamentals/`. Use lowercase hyphenated filenames and descriptive approach suffixes. Add each new problem to the topic index.
+The existing learning files are grouped into topic folders. Continue using `arrays/`, `strings/`, `two-pointers/`, `sliding-window/`, `binary-search/`, `dynamic-programming/`, `matrices/`, `sorting/`, `math/`, and `fundamentals/`. Use lowercase hyphenated filenames and descriptive approach suffixes. Add each new problem to the topic index.
